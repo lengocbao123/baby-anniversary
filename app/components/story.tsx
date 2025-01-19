@@ -91,7 +91,7 @@ const Story = ({}) => {
         </div>
         <div className="col-span-1 flex sm:hidden items-center justify-center rounded-lg overflow-hidden relative ">
           <div className="z-10 bg-gradient-to-r from-[#C3E1DB] to-transparent absolute left-0 inset-y-0 w-5"></div>
-          <Marquee pauseOnHover className="[--duration:20s]">
+          <Marquee className="[--duration:20s]">
             {images.map((image, index) => (
               <Image
                 key={index}
