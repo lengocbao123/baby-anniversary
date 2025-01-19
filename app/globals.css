@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gallery {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.gallery__item img {
+  width: 100%;
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
