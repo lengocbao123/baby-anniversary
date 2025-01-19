@@ -1,7 +1,9 @@
-"use client"
-import Lottie from "react-lottie-player";
+"use client";
+
 import { amaticSC } from "../constants/font";
-import catJson from "../../lib/cat.json"
+import catJson from "../../lib/cat.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 export const FooterSection = () => {
   return (
     <footer className="w-full h-[300px] flex bg-white justify-center items-center py-8 ">
@@ -10,7 +12,7 @@ export const FooterSection = () => {
         animationData={catJson}
         play
         style={{ width: 200, height: 200 }}
-      />{" "}
+      />
       <div className={`${amaticSC.className} text-6xl`}>Thank you!</div>
     </footer>
   );

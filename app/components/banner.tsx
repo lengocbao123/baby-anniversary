@@ -2,8 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { balooChettan } from "../constants/font";
-import Lottie from "react-lottie-player";
 import partyJson from "../../lib/party.json";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 
 const BannerSection = () => {
   return (

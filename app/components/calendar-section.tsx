@@ -4,9 +4,9 @@ import { amaticSC } from "../constants/font";
 import { Calendar } from "@/components/ui/calendar";
 import { differenceInDays } from "date-fns";
 import Image from "next/image";
-import Lottie from "react-lottie-player";
 import flagJson from "../../lib/flag.json";
-
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 export const CalendarSection = () => {
   const totalDays = differenceInDays(
     new Date("2025-01-08T00:00:00"),

@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
-
 import { ColumnsPhotoAlbum, Photo } from "react-photo-album";
-
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "react-photo-album/columns.css";
@@ -13,7 +11,8 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Image from "next/image";
-import { amaticSC, balooChettan, greatVibes } from "../constants/font";
+import { amaticSC, balooChettan } from "../constants/font";
+
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const photos = [

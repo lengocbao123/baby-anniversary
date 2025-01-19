@@ -1,7 +1,7 @@
 import React from "react";
 import TimelineRow from "./timeline-row";
 import Image from "next/image";
-import { amaticSC, greatVibes } from "@/app/constants/font";
+import { amaticSC } from "@/app/constants/font";
 
 const TimelineTable = () => {
   return (
