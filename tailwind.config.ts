@@ -24,9 +24,11 @@ const config: Config = {
 		"rain-drop": "rainDrop 1s linear infinite",
 		"snow-drop": "snowDrop 1.5s linear infinite",
 		marquee: 'marquee var(--duration) linear infinite',
-        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+		'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
 		"first-lower-left-leg": "first-lower-left-leg 1.5s linear infinite",
-		"qodef-flight":"qodef-flight 1.5s linear infinite"
+		"qodef-flight":"qodef-flight 1.5s linear infinite",
+		"qodef-move-and-return":"qodef-move-and-return 1.5s linear infinite",
+		"qodef-propeler":"qodef-propeler 1.5s linear infinite"
 	  },
 	  keyframes: {
 		slideDown: {

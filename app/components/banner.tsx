@@ -95,32 +95,36 @@ const BannerSection = () => {
             height={187}
           />
           <Image
-            className=" w-auto rounded-lg absolute z-10 top-[100%] right-0 animate-first-lower-left-leg"
+            className="w-auto rounded-lg absolute z-10 top-[100%] right-1/4 sm:right-0 animate-first-lower-left-leg"
             src={"/graphics/graphic-3.png"}
             alt=""
             width={183}
             height={187}
           />
+          <div className="w-auto rounded-lg absolute z-10 top-0 right-0">
+            <Lottie
+              loop
+              animationData={partyJson}
+              play
+              style={{ width: 200, height: 200 }}
+            />
+          </div>
+          <div className="h-24 w-auto rounded-lg absolute z-10 top-0 left-0">
+            <Lottie
+              loop
+              animationData={partyJson}
+              play
+              style={{ width: 200, height: 200 }}
+            />
+          </div>
         </div>
         <div className="z-20 flex">
           <div
             className={`${balooChettan.className} flex flex-col sm:flex-row text-8xl space-x-4 font-semibold items-center text-center`}
           >
-            <Lottie
-              loop
-              animationData={partyJson}
-              play
-              style={{ width: 200, height: 200 }}
-            />
             <span className="text-[#8ec7ad]">Always</span>
             <span className="text-[#444444]">Making</span>
             <span className="text-[#f37746]">Friend</span>
-            <Lottie
-              loop
-              animationData={partyJson}
-              play
-              style={{ width: 200, height: 200 }}
-            />
           </div>
         </div>
       </div>
