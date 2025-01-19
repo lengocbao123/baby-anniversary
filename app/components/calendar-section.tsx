@@ -26,30 +26,30 @@ export const CalendarSection = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 p-4 sm:p-28 bg-[#F6F1E4] gap-10 relative">
         <Image
-          className="absolute z-10"
+          className="absolute z-10 animate-qodef-move-and-return"
           height={152}
           width={104}
           alt=""
           src="/landing-rev-img-28.png"
         />
         <Image
-          className="absolute z-10 top-0 right-0"
-          height={152}
-          width={104}
+          className="absolute z-10 top-0 right-0 w-[calc(128px/2)] h-[calc(177px/2)] animate-qodef-move-and-return"
+          height={177}
+          width={128}
           alt=""
           src="/graphics/graphic-5.png"
         />
         <Image
           className="absolute z-10 bottom-0 right-0"
-          height={152}
-          width={104}
+          height={126}
+          width={71}
           alt=""
           src="/graphics/graphic-6.png"
         />
         <Image
           className="absolute z-10 bottom-0 left-0"
-          height={152}
-          width={104}
+          height={62}
+          width={62}
           alt=""
           src="/graphics/graphic-7.png"
         />
