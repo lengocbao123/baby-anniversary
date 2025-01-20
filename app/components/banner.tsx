@@ -10,42 +10,42 @@ const BannerSection = () => {
   return (
     <div className="w-full bg-[#F6F1E4] overflow-hidden  sm:min-h-screen relative flex flex-col items-center justify-between sm:justify-between">
       <div className="flex">
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__delay-3s animate__fadeInDown hidden sm:block m-0 sm:mt-10">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-3s animate__fadeInDown hidden sm:block m-0 sm:mt-10">
           <Image
             src={"/kids/kid-1.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={2581}
+            height={2581}
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob.svg')",
               maskSize: "contain",
               maskRepeat: "no-repeat",
-              maskPosition: "center",
+              maskPosition: "left",
             }}
           />
         </figure>
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__delay-2s animate__fadeInDown">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-2s animate__fadeInDown">
           <Image
             src={"/kids/kid-2.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={1820}
+            height={1820}
             className="w-full h-full object-cover aspect-square"
             style={{
-              maskImage: "url('/svg/blob.svg')",
+              maskImage: "url('/svg/blob-3.svg')",
               maskSize: "contain",
               maskRepeat: "no-repeat",
               maskPosition: "center",
             }}
           />
         </figure>
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__delay-1s animate__fadeInDown">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-1s animate__fadeInDown">
           <Image
             src={"/kids/kid-3.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={1820}
+            height={1820}
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob-2.svg')",
@@ -55,18 +55,18 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__fadeInDown  hidden sm:block m-0 sm:mt-10">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__fadeInDown  hidden sm:block m-0 sm:mt-10">
           <Image
             src={"/kids/kid-4.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={992}
+            height={992}
             className="w-full h-full object-cover aspect-square"
             style={{
-              maskImage: "url('/svg/blob-3.svg')",
+              maskImage: "url('/svg/blob.svg')",
               maskSize: "contain",
               maskRepeat: "no-repeat",
-              maskPosition: "center",
+              maskPosition: "top",
             }}
           />
         </figure>
@@ -129,12 +129,12 @@ const BannerSection = () => {
         </div>
       </div>
       <div className="flex">
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__fadeInUp m-0 sm:-mt-10  hidden sm:block">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__fadeInUp m-0 sm:-mt-10  hidden sm:block">
           <Image
             src={"/kids/kid-5.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={2563}
+            height={2563}
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob-4.svg')",
@@ -144,12 +144,12 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__delay-1s animate__fadeInUp">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-1s animate__fadeInUp">
           <Image
             src={"/kids/kid-6.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={1420}
+            height={1420}
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob-3.svg')",
@@ -159,12 +159,12 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[320px] h-[180px] rounded-lg animate__animated animate__delay-2s animate__fadeInUp">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-2s animate__fadeInUp">
           <Image
             src={"/kids/kid-7.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={2254}
+            height={2254}
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob.svg')",
@@ -174,12 +174,12 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[200px] h-[200px] rounded-lg animate__animated animate__delay-3s animate__fadeInUp  m-0 sm:-mt-10  hidden sm:block">
+        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-3s animate__fadeInUp  m-0 sm:-mt-10  hidden sm:block">
           <Image
             src={"/kids/kid-8.jpg"}
             alt=""
-            width={1170}
-            height={650}
+            width={1080}
+            height={1080}
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob-1.svg')",
