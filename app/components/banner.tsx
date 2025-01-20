@@ -9,8 +9,8 @@ const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 const BannerSection = () => {
   return (
     <div className="w-full bg-[#F6F1E4] overflow-hidden  sm:min-h-screen relative flex flex-col items-center justify-between sm:justify-between">
-      <div className="flex">
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-3s animate__fadeInDown hidden sm:block m-0 sm:mt-10">
+      <div className="grid grid-cols-2 sm:grid-cols-4">
+        <figure className="animate__animated animate__delay-3s animate__fadeInDown hidden sm:block m-0 sm:mt-10">
           <Image
             src={"/kids/kid-1.jpg"}
             alt=""
@@ -19,43 +19,13 @@ const BannerSection = () => {
             className="w-full h-full object-cover aspect-square"
             style={{
               maskImage: "url('/svg/blob.svg')",
-              maskSize: "contain",
+              maskSize: "cover",
               maskRepeat: "no-repeat",
               maskPosition: "left",
             }}
           />
         </figure>
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-2s animate__fadeInDown">
-          <Image
-            src={"/kids/kid-2.jpg"}
-            alt=""
-            width={1820}
-            height={1820}
-            className="w-full h-full object-cover aspect-square"
-            style={{
-              maskImage: "url('/svg/blob-3.svg')",
-              maskSize: "contain",
-              maskRepeat: "no-repeat",
-              maskPosition: "center",
-            }}
-          />
-        </figure>
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-1s animate__fadeInDown">
-          <Image
-            src={"/kids/kid-3.jpg"}
-            alt=""
-            width={1820}
-            height={1820}
-            className="w-full h-full object-cover aspect-square"
-            style={{
-              maskImage: "url('/svg/blob-2.svg')",
-              maskSize: "contain",
-              maskRepeat: "no-repeat",
-              maskPosition: "center",
-            }}
-          />
-        </figure>
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__fadeInDown  hidden sm:block m-0 sm:mt-10">
+        <figure className="w-full h-full rounded-lg animate__animated animate__fadeInDown  hidden sm:block m-0 sm:mt-10">
           <Image
             src={"/kids/kid-4.jpg"}
             alt=""
@@ -70,6 +40,37 @@ const BannerSection = () => {
             }}
           />
         </figure>
+        <figure className="animate__animated animate__delay-2s animate__fadeInDown">
+          <Image
+            src={"/kids/kid-2.jpg"}
+            alt=""
+            width={1820}
+            height={1820}
+            className="w-full h-full object-cover aspect-square"
+            style={{
+              maskImage: "url('/svg/blob-3.svg')",
+              maskSize: "contain",
+              maskRepeat: "no-repeat",
+              maskPosition: "center",
+            }}
+          />
+        </figure>
+        <figure className="rounded-lg animate__animated animate__delay-1s animate__fadeInDown">
+          <Image
+            src={"/kids/kid-3.jpg"}
+            alt=""
+            width={1820}
+            height={1820}
+            className="w-full h-full object-cover aspect-square"
+            style={{
+              maskImage: "url('/svg/blob-2.svg')",
+              maskSize: "contain",
+              maskRepeat: "no-repeat",
+              maskPosition: "center",
+            }}
+          />
+        </figure>
+    
       </div>
       <div className="flex justify-center gap-5 relative animate__animated animate__slow animate__delay-3s animate__bounceInUp">
         <div>
@@ -128,8 +129,8 @@ const BannerSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__fadeInUp m-0 sm:-mt-10  hidden sm:block">
+      <div className="grid grid-cols-2 sm:grid-cols-4">
+        <figure className="rounded-lg animate__animated animate__fadeInUp m-0 sm:-mt-10  hidden sm:block">
           <Image
             src={"/kids/kid-5.jpg"}
             alt=""
@@ -144,7 +145,7 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-1s animate__fadeInUp">
+        <figure className="rounded-lg animate__animated animate__delay-1s animate__fadeInUp">
           <Image
             src={"/kids/kid-6.jpg"}
             alt=""
@@ -159,7 +160,7 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-2s animate__fadeInUp">
+        <figure className="rounded-lg animate__animated animate__delay-2s animate__fadeInUp">
           <Image
             src={"/kids/kid-7.jpg"}
             alt=""
@@ -174,7 +175,7 @@ const BannerSection = () => {
             }}
           />
         </figure>
-        <figure className="w-[225px] h-[225px] rounded-lg animate__animated animate__delay-3s animate__fadeInUp  m-0 sm:-mt-10  hidden sm:block">
+        <figure className="rounded-lg animate__animated animate__delay-3s animate__fadeInUp  m-0 sm:-mt-10  hidden sm:block">
           <Image
             src={"/kids/kid-8.jpg"}
             alt=""

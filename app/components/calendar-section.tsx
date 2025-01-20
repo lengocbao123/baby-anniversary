@@ -71,8 +71,8 @@ export const CalendarSection = () => {
                 width={48}
                 src={"/h4-rev-pin-img.png"}
               />
-              Trung Tâm Hội Nghị - Tiệc Cưới Riverside Palace, 360D Đ. Bến Vân
-              Đồn, Phường 1, Quận 4, Hồ Chí Minh.
+              NHÀ HÀNG AROMA
+              STELIA BEACH RESORT, LÔ CI ĐỘC LẬP - PHƯỜNG 9 - TUY HÒA
             </div>
             <div className="text-sm sm:text-base flex items-start text-center">
               <Image
@@ -82,7 +82,7 @@ export const CalendarSection = () => {
                 width={48}
                 src={"/h4-rev-clock-img.png"}
               />
-              19h00 22 Tháng 2 Năm 2025
+              17h00 27 Tháng 1 Năm 2025
             </div>
             <div className="w-full relative">
               <Image
@@ -107,8 +107,8 @@ export const CalendarSection = () => {
             <Calendar
               mode="single"
               disableNavigation
-              defaultMonth={new Date("2025-01-31T00:00:00")}
-              selected={new Date("2025-01-08T00:00:00")}
+              // defaultMonth={new Date("2025-01-31T00:00:00")}
+              selected={new Date("2025-01-27T00:00:00")}
               className="border-0"
             />
           </div>
