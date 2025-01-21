@@ -4,9 +4,6 @@ import { amaticSC } from "../constants/font";
 import { Calendar } from "@/components/ui/calendar";
 import { differenceInDays } from "date-fns";
 import Image from "next/image";
-import flagJson from "../../lib/flag.json";
-import dynamic from "next/dynamic";
-const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 export const CalendarSection = () => {
   const totalDays = differenceInDays(
     new Date("2025-01-08T00:00:00"),
@@ -55,12 +52,6 @@ export const CalendarSection = () => {
         />
         <div className="p-8 bg-white rounded">
           <div className="h-[480px] w-full flex items-center justify-center flex-col border-4 rounded border-[#C3E1DB] space-y-5 p-4">
-            <Lottie
-              loop
-              animationData={flagJson}
-              play
-              style={{ width: 400, height: 100 }}
-            />
             <h3 className={`${amaticSC.className} text-5xl`}>Save the Date</h3>
 
             <div className="text-sm sm:text-base flex items-start text-center">

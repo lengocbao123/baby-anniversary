@@ -4,14 +4,14 @@ import { amaticSC, balooChettan } from "../constants/font";
 import Marquee from "./marquee";
 
 const images = [
-  "/slides/0008-min.JPG",
-  "/slides/0295-min.JPG",
-  "/slides/0017-min.JPG",
-  "/slides/0065-min.JPG",
-  "/slides/0127-min.JPG",
-  "/slides/0261-min.JPG",
-  "/slides/0275-min.JPG",
-  "/slides/0251-min.JPG",
+  {src:"/slides/0008-min.JPG",width:5472,height:3648},
+  {src:"/slides/0295-min.JPG",width:3648,height:5472},
+  {src:"/slides/0017-min.JPG",width:5472,height:3648},
+  {src:"/slides/0065-min.JPG",width:3648,height:5472},
+  {src:"/slides/0127-min.JPG",width:3648,height:5472},
+  {src:"/slides/0261-min.JPG",width:3648,height:5472},
+  {src:"/slides/0275-min.JPG",width:3648,height:5472},
+  {src:"/slides/0251-min.JPG",width:5472,height:3648},
 ];
 const Story = ({}) => {
   return (
@@ -46,7 +46,7 @@ const Story = ({}) => {
             dignissimos. Eveniet, consequatur soluta.
           </p>
 
-          <div className="flex gap-4">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
             <Image
               className="animate-first-lower-left-leg"
               src={"/h2-img-5.png"}
@@ -85,9 +85,9 @@ const Story = ({}) => {
                 key={index}
                 className="h-auto w-full"
                 alt=""
-                src={image}
-                width={800}
-                height={622}
+                src={image.src}
+                width={image.width}
+                height={image.height}
               />
             ))}
           </Marquee>
@@ -99,11 +99,11 @@ const Story = ({}) => {
             {images.map((image, index) => (
               <Image
                 key={index}
-                className="h-auto w-full"
+                className="h-full w-auto"
                 alt=""
-                src={image}
-                width={800}
-                height={622}
+                src={image.src}
+                width={image.width}
+                height={image.height}
               />
             ))}
           </Marquee>
