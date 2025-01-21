@@ -78,7 +78,7 @@ const Story = ({}) => {
           </div>
         </div>
         <div className="col-span-1 hidden sm:flex flex-col justify-center items-center relative rounded-lg">
-          <div className="z-10 bg-gradient-to-b from-[#C3E1DB] to-transparent absolute top-0 inset-x-0 h-10"></div>
+          <div className="z-10 bg-gradient-to-b from-[#C3E1DB] to-transparent top-0 inset-x-0 h-10"></div>
           <Marquee vertical className="[--duration:60s] h-[750px]">
             {images.map((image, index) => (
               <Image
@@ -94,8 +94,8 @@ const Story = ({}) => {
           <div className="z-10 bg-gradient-to-t from-[#C3E1DB]  to-transparent absolute bottom-0 inset-x-0 h-10"></div>
         </div>
         <div className="col-span-1 flex sm:hidden items-center justify-center rounded-lg overflow-hidden relative ">
-          <div className="z-10 bg-gradient-to-r from-[#C3E1DB] to-transparent absolute left-0 inset-y-0 w-5"></div>
-          <Marquee pauseOnHover className="[--duration:60s] h-[400px]">
+          <div className="z-10 bg-gradient-to-r from-[#C3E1DB] to-transparent left-0 inset-y-0 w-5"></div>
+          <Marquee className="[--duration:60s] h-[400px]">
             {images.map((image, index) => (
               <Image
                 key={index}
