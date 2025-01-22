@@ -123,9 +123,9 @@ const BannerSection = () => {
           <div
             className={`${balooChettan.className} flex flex-col sm:flex-row text-8xl space-x-4 font-semibold items-center text-center`}
           >
-            <span className="text-[#8ec7ad]">Always</span>
-            <span className="text-[#444444]">Making</span>
-            <span className="text-[#f37746]">Friend</span>
+            <span className="text-[#8ec7ad]">Happy</span>
+            <span className="text-[#444444]">Tet baby</span>
+            <span className="text-[#f37746]">Birthday</span>
           </div>
         </div>
       </div>

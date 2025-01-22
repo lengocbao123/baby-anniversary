@@ -1,18 +1,21 @@
-"use client";
-import Image from "next/image";
-import { amaticSC, balooChettan } from "../constants/font";
-import Marquee from "./marquee";
+'use client'
+import Image from 'next/image'
+import { amaticSC, balooChettan } from '../constants/font'
+import Marquee from './marquee'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem
+} from '@/components/ui/carousel'
+import Autoplay from 'embla-carousel-autoplay'
 
 const images = [
-  {src:"/slides/0008-min.JPG",width:5472,height:3648},
-  {src:"/slides/0295-min.JPG",width:3648,height:5472},
-  {src:"/slides/0017-min.JPG",width:5472,height:3648},
-  {src:"/slides/0065-min.JPG",width:3648,height:5472},
-  {src:"/slides/0127-min.JPG",width:3648,height:5472},
-  {src:"/slides/0261-min.JPG",width:3648,height:5472},
-  {src:"/slides/0275-min.JPG",width:3648,height:5472},
-  {src:"/slides/0251-min.JPG",width:5472,height:3648},
-];
+  { src: '/slides/0295-min.JPG', width: 3648, height: 5472 },
+  { src: '/slides/0065-min.JPG', width: 3648, height: 5472 },
+  { src: '/slides/0127-min.JPG', width: 3648, height: 5472 },
+  { src: '/slides/0261-min.JPG', width: 3648, height: 5472 },
+  { src: '/slides/0275-min.JPG', width: 3648, height: 5472 }
+]
 const Story = ({}) => {
   return (
     <div className="bg-[#F6F1E4]">
@@ -35,42 +38,40 @@ const Story = ({}) => {
           <h2
             className={`${amaticSC.className} text-center text-6xl text-black font-extrabold`}
           >
-            Câu chuyện
+            Bé Tết đã tròn 1 tuổi
           </h2>
           <p
             className={`${balooChettan.className} text-black text-sm sm:text-base`}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            corrupti officiis. Eveniet laudantium vero natus delectus aliquid,
-            placeat accusantium molestiae ullam cumque voluptas, facere vitae ex
-            dignissimos. Eveniet, consequatur soluta.
+            Cảm ơn con đã đến với bố mẹ. Một hành trình mới tràn ngập yêu thương
+            và hạnh phúc đã bắt đầu. Chúc mừng sinh nhật bé yêu!
           </p>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
             <Image
               className="animate-first-lower-left-leg"
-              src={"/h2-img-5.png"}
+              src={'/h2-img-5.png'}
               alt=""
               width={250}
               height={222}
             />
             <Image
               className="animate-first-lower-left-leg"
-              src={"/h2-img-6.png"}
+              src={'/h2-img-6.png'}
               alt=""
               width={250}
               height={222}
             />
             <Image
               className="animate-first-lower-left-leg hidden sm:block m-0"
-              src={"/h2-img-7.png"}
+              src={'/h2-img-7.png'}
               alt=""
               width={250}
               height={222}
             />
             <Image
               className="animate-first-lower-left-leg hidden sm:block m-0"
-              src={"/h2-img-8.png"}
+              src={'/h2-img-8.png'}
               alt=""
               width={250}
               height={222}
@@ -95,7 +96,31 @@ const Story = ({}) => {
         </div>
         <div className="col-span-1 flex sm:hidden items-center justify-center rounded-lg overflow-hidden relative ">
           <div className="z-10 bg-gradient-to-r from-[#C3E1DB] to-transparent left-0 inset-y-0 w-5"></div>
-          <Marquee className="[--duration:60s] h-[400px]">
+          <Carousel
+            opts={{
+              loop: true
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000
+              })
+            ]}
+          >
+            <CarouselContent>
+              {images.map((image, index) => (
+                <CarouselItem key={index} className="w-fit h-full">
+                  <Image
+                    className="h-full w-f"
+                    alt=""
+                    src={image.src}
+                    width={image.width}
+                    height={image.height}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+          {/* <Marquee className="[--duration:60s] h-[400px]">
             {images.map((image, index) => (
               <Image
                 key={index}
@@ -106,11 +131,11 @@ const Story = ({}) => {
                 height={image.height}
               />
             ))}
-          </Marquee>
+          </Marquee> */}
           <div className="z-10 bg-gradient-to-l from-[#C3E1DB] to-transparent absolute right-0 inset-y-0 w-5"></div>
         </div>
       </div>
     </div>
-  );
-};
-export default Story;
+  )
+}
+export default Story
