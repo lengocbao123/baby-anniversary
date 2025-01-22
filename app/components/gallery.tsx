@@ -210,7 +210,7 @@ export default function App() {
       </div>
 
       <p className={`${balooChettan.className} text-lg text-center`}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Những kí ức đẹp của bé yêu sẽ mãi mãi được lưu giữ.
       </p>
       <ColumnsPhotoAlbum
         photos={photos}

@@ -1,16 +1,16 @@
-"use client";
+'use client'
 
-import Marquee from "react-fast-marquee";
-import Image from "next/image";
-import { balooChettan, amaticSC } from "../constants/font";
+import Marquee from 'react-fast-marquee'
+import Image from 'next/image'
+import { balooChettan, amaticSC } from '../constants/font'
 
 const images = [
-  "https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07035_M_GKwS4eK.jpg?updatedAt=1735456328039",
-  "https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07443_mgzYHWWE5.jpg?updatedAt=1735456420822",
-  "https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07508_2PCcNmZwm.jpg?updatedAt=1735456425512",
-  "https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07116_kkam7SH6E.jpg?updatedAt=1735456328060",
-  "https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07163_YopmCnEJV.jpg?updatedAt=1735456330128",
-];
+  'https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07035_M_GKwS4eK.jpg?updatedAt=1735456328039',
+  'https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07443_mgzYHWWE5.jpg?updatedAt=1735456420822',
+  'https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07508_2PCcNmZwm.jpg?updatedAt=1735456425512',
+  'https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07116_kkam7SH6E.jpg?updatedAt=1735456328060',
+  'https://ik.imagekit.io/gsozk5bngn/Wedding/Marquee/SHO07163_YopmCnEJV.jpg?updatedAt=1735456330128'
+]
 const HeroSection = () => {
   return (
     <section>
@@ -20,22 +20,22 @@ const HeroSection = () => {
             <h1
               className={`${balooChettan.className} text-4xl sm:text-7xl font-semibold text-[#8dc8ae]`}
             >
-              Always
+              Happy
             </h1>
             <h1
               className={`${balooChettan.className} text-4xl sm:text-7xl font-semibold text-[#444444]`}
             >
-              Making
+              Tet Baby
             </h1>
             <h1
               className={`${balooChettan.className} text-4xl sm:text-7xl font-semibold text-[#f37647]`}
             >
-              Friend
+              Baby!
             </h1>
           </div>
 
           <h2 className={`${amaticSC.className} text-base sm:text-3xl p-3 `}>
-            Một hành trình mới bắt đầu.
+            Một hành trình mới bắt đầu. Chúc mừng sinh nhật bé yêu!
           </h2>
         </div>
 
@@ -58,7 +58,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSection;
+export default HeroSection
